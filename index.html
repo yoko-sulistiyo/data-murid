@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Pengaturan responsif HP, tablet, dan desktop -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#f4f6f9">
+  <meta name="description" content="Data Siswa 8F">
+
+  <title>PGRI Pontianak</title>
+
+  <!-- FAVICON: Logo PGRI pada tab browser -->
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://github.com/yoko-sulistiyo.png?size=32"
+  >
+
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="https://github.com/yoko-sulistiyo.png?size=32"
+  >
+
+  <!-- Ikon untuk perangkat iPhone/iPad -->
+  <link
+    rel="apple-touch-icon"
+    href="https://github.com/yoko-sulistiyo.png?size=180"
+  >
+
+  <style>
+    /* Reset seluruh elemen */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      background: #f4f6f9;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Wadah utama memenuhi layar */
+    .app-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+      background: #f4f6f9;
+    }
+
+    /* Iframe aplikasi Google Apps Script */
+    .app-frame {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+    }
+
+    /* HP */
+    @media screen and (max-width: 767px) {
+      .app-container {
+        height: 100vh;
+        height: 100svh;
+        height: 100dvh;
+      }
+
+      .app-frame {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 768px)
+      and (max-width: 1024px) {
+      .app-container {
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+      }
+
+      .app-frame {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    /* Desktop dan laptop */
+    @media screen and (min-width: 1025px) {
+      .app-container,
+      .app-frame {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app-container">
+    <iframe
+      class="app-frame"
+      src="https://script.google.com/a/macros/guru.smp.belajar.id/s/AKfycbz2ACSlSD3dEZe-0XkMKzoWBpMhnumtjCnLR9jevE7hMPJB7X8pqSO0ZHe9n2zeqfSX9A/exec"
+      title="Data 8F"
+      allowfullscreen
+      loading="eager"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </main>
+</body>
+</html>
